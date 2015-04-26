@@ -1,3 +1,5 @@
+This is a small game written in SDL. Project in code::blocks compiled with MinGW 3.21
+
 Controls:
 	B: makes the base appear
 	S: creates new units 
