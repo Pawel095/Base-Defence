@@ -149,7 +149,7 @@ int main(int, char**){
 	bool isRepairing = false;
 	//punkty i surowce;
 	int score = 0;
-	int surowceCount=10;
+	int surowceCount=2;
 	int unityCount=0;
 
 	int difficulty=0;
@@ -211,7 +211,7 @@ int main(int, char**){
 	//zaznaczanie
 	int DragTempX,DragTempY;
 	bool isDragging = false;
-	bool nickSceenDone=true;
+	bool nickSceenDone=false;
     bool quit = false;
     SDL_Event e;
 
@@ -280,11 +280,10 @@ int main(int, char**){
 	int surowceSpawnTimer = 0;
 	SDL_RenderClear(ren);
 	//________________________________________________________________________________________MAIN LOOP_______________________________________________________________________________________________
+	//start muzyki
+    Mix_PlayMusic(gameMusic,-1);
 	while (!quit){
 		SDL_Rect isDraggingRect;
-
-		//start muzyki
-        //Mix_PlayMusic(gameMusic,-1);
 
 		//eventy
 		while (SDL_PollEvent(&e)){
