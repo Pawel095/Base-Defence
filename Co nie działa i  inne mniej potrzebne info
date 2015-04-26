@@ -1,0 +1,32 @@
+Main:
+    okolice 377:
+        Wylaczone pociski.
+    206:
+        pauza na muzyce.
+    752:
+        pauza na muzyce.
+    211:
+        NickScreen off.
+Font:
+    char 1 to Unitium.
+    char 2 to Friend.
+Enemies:
+    target No == 123 czyli namierzona baza.
+kanaly:
+    3:Glos jednostek.
+    4:Base is under attack
+    5:Not enough Unituim
+    6:Maximum numbers of units reached
+TODO LISTA##################################
+ <_> 1.Hi-scores
+ [X] |_Nazwa gracza.
+ [-] |_Zapisywanie.
+ [X] | |_do pliku
+ [_] | |_(opcjonalnie) do internetu.
+ [_] |_wyswietlanie.
+ <_> 3.Trudnosc
+ [X] |_Podnoszenie hapsow enemiesow co jeden awans o 1 HP az do 9; //info:: awansCount= zmienna od difficulty.
+ [X] |_#####Lub co 5000 klatek.
+ [X] |_Potem podnoszenie ataku o 1 co awans az do atak calkowity 10;
+ [X] |_Przyspieszenie spawnowania.//info:: difficulty jest od tego.
+ (N) |_Ma spadac przy utracie jednostki? Y/N
