@@ -1,4 +1,4 @@
-Thank you for playing base defense.  Controls:
+Controls:
 	B: makes the base appear
 	S: creates new units 
 	Use left mouse button to drag around your units to select them. 
