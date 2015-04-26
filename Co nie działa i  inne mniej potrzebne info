@@ -1,6 +1,12 @@
 Main:
     okolice 377:
         Wylaczone pociski.
+    206:
+        pauza na muzyce.
+    752:
+        pauza na muzyce.
+    211:
+        NickScreen off.
 Font:
     char 1 to Unitium.
     char 2 to Friend.
