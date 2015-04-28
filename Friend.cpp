@@ -14,6 +14,7 @@ void Friend::F_render(){
 		if (*F_isPaused == true){
 			renderTexture(F_texture, F_renderer, F_x, F_y, &clip);
 			renderTexture(F_HPBarTexture, F_renderer, F_x, F_y - 16, &F_HPBarClip[F_HP]);
+			renderTexture(F_rangi,F_renderer,(F_x+50)-32,F_y,&F_RangaClip[ranga]);
 			return void();
 		}
 
@@ -38,6 +39,7 @@ void Friend::F_render(){
 		if (*F_isPaused == true){
 			renderTexture(F_texture, F_renderer, F_x, F_y, &clip);
 			renderTexture(F_HPBarTexture, F_renderer, F_x, F_y - 16, &F_HPBarClip[F_HP]);
+            renderTexture(F_rangi,F_renderer,(F_x+50)-32,F_y,&F_RangaClip[ranga]);
 			return void();
 		}
 

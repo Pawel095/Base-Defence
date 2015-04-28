@@ -375,3 +375,30 @@
 	<string>
 	"tools.h"
 
+1430249798 source:c:\users\oem\skydrive\sdl\base-defence\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<SDL.h>
+	<direct.h>
+	<stdio.h>
+	<SDL_image.h>
+	<cstdlib>
+	<ctime>
+	<Windows.h>
+	<SDL_mixer.h>
+	"tools.h"
+	"Friend.h"
+	"Enemy.h"
+	"Baza.h"
+	"Surowiec.h"
+
+1430084615 c:\users\oem\skydrive\sdl\base-defence\sdl\include\sdl2\sdl_mixer.h
+	"SDL_stdinc.h"
+	"SDL_rwops.h"
+	"SDL_audio.h"
+	"SDL_endian.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+

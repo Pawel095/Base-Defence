@@ -23,14 +23,13 @@
 #define P_BUFFER 50
 #define S_BUFFER 3
 
-#define E_SPAWNSPEED 100
+#define E_SPAWNSPEED 150
 
 using namespace std;
 
 const int WIDTH = 640;
 const int HEIGHT = 480;
 
-void repairModeLogic();
 
 int main(int, char**){
 	//setup randomizera
@@ -432,7 +431,7 @@ int main(int, char**){
 			}
 		}
 		//logika podnoszenia poziomu trudności._______________________________________DIFFICULTY LOGIC_____________________________________________________________________________________________
-		if(partialDifficulty>5000){
+		if(partialDifficulty>7000){
             partialDifficulty=0;
             awansCount++;
             difficulty++;
@@ -712,8 +711,8 @@ int main(int, char**){
                         Friends[i].kills++;
                         score++;
                         Enemies[Friends[i].F_cel.enemyNo].E_isVisible=false;
-                        Enemies[Friends[i].F_cel.enemyNo].E_HP=3+awansCount;
-					}else{
+                        Enemies[Friends[i].F_cel.enemyNo].E_HP=awansCount+3;
+					}else if(Enemies[Friends[i].F_cel.enemyNo].E_HP<=-1){
                         Friends[i].kills++;
                         score++;
                         Enemies[Friends[i].F_cel.enemyNo].E_isVisible=false;
