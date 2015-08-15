@@ -289,6 +289,7 @@ static bool isInside(SDL_Rect rect, int x, int y){
 	}
 	return false;
 }
+
 static double getAngle(SDL_Rect a,SDL_Rect b){
     return abs(a.x-b.x)/abs(a.y-b.y);
 }

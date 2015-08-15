@@ -14,11 +14,11 @@ kanaly:
 TODO LISTA##################################
  <_> 1.Hi-scores
  [X] |_Nazwa gracza.
- [-] |_Zapisywanie.
+ [X] |_Zapisywanie.
  [X] | |_do pliku
  [_] | |_(opcjonalnie) do internetu.
  [_] |_wyswietlanie.
- <_> 3.Trudnosc
+ <X> 3.Trudnosc
  [X] |_Podnoszenie hapsow enemiesow co jeden awans o 1 HP az do 9; //info:: awansCount= zmienna od difficulty.
  [X] |_#####Lub co 5000 klatek.
  [X] |_Potem podnoszenie ataku o 1 co awans az do atak calkowity 10;

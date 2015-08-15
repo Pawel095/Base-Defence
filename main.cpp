@@ -154,6 +154,8 @@ int main(int, char**){
 	int difficulty=0;
 	int awansCount=0;
 	int partialDifficulty=0;
+	char previousKey=0;
+	string tempCzit;
 	//pauza wszystkiego;
 	bool pause = false;
 
@@ -283,14 +285,12 @@ int main(int, char**){
     Mix_PlayMusic(gameMusic,-1);
 	while (!quit){
 		SDL_Rect isDraggingRect;
-
 		//eventy
 		while (SDL_PollEvent(&e)){
 			//zamkniecie okna
 			if (e.type == SDL_QUIT)
 				quit = true;
-
-			if (e.type == SDL_KEYDOWN)//____________________________________________________KLAWISZE___________________________________________________________________________________________________
+			if (e.type == SDL_KEYDOWN){//____________________________________________________KLAWISZE___________________________________________________________________________________________________
 				switch (e.key.keysym.sym){
 				case SDLK_s:
 				    if(isRepairing==false){
@@ -327,8 +327,20 @@ int main(int, char**){
                         F_baza.B_x = cursorX;
                         F_baza.B_y = cursorY;
 					break;
-
+				}
+				if(e.key.keysym.sym>96 && e.key.keysym.sym<123){
+                    char tempkey=e.key.keysym.sym;
+                    tempCzit+=tempkey;
+                    cout<<tempkey<<endl;
+				}
 			}
+			if(tempCzit.find(string("moarmonej")) !=string::npos ){
+                surowceCount=99;
+                tempCzit="";
+			}if(tempCzit.length()>25565){
+                tempCzit="";
+			}
+
 
 			if (e.type == SDL_MOUSEBUTTONDOWN){
 				if (e.button.button == SDL_BUTTON_RIGHT && isRepairing==false){
@@ -763,8 +775,9 @@ int main(int, char**){
                     }
                 }
             }
-            //logging
             system("cls");
+            //logging
+            cout<<tempCzit<<endl;
             cout<<awansCount<<" awansCount"<<endl;
 		}
 
